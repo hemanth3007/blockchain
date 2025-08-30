@@ -1,0 +1,139 @@
+/* Dashboard.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+button {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+input, select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 10px rgba(106, 17, 203, 0.3);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
+}
+
+th {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+td a {
+  color: #6a11cb;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
+
+pre {
+  background: rgba(0,0,0,0.2);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  overflow-x: auto;
+}
+
+input[type="file"] {
+  padding: 6px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.status {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffd700;
+}
+
+.card {
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  input, select, button {
+    width: 100%;
+    max-width: 100%;
+  }
+  table {
+    font-size: 12px;
+  }
+}
